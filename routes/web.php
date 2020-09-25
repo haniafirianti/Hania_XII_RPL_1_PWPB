@@ -19,7 +19,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::middleware('role:admin')->get('/dashboard', function(){
-	return 'Dasboard';
+	return 'Ini Dashboard';
 })->name('dashboard');
 
 
